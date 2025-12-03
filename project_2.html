@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DelishBite Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ff7f50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 20px;
+        }
+        .menu-item {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        form {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            max-width: 400px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #ff7f50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e56e45;
+        }
+        .review {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DelishBite Restaurant</h1>
+    <p>Your favorite place for delicious meals!</p>
+</header>
+
+<nav>
+    <a href="#menu">Menu</a>
+    <a href="#reservation">Reservations</a>
+    <a href="#reviews">Reviews</a>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to <strong>DelishBite Restaurant</strong>, your go-to place for fresh, delicious, and affordable meals. We believe in serving food made with love, using the freshest ingredients. Whether you're here for a quick bite or a family dinner, we ensure a warm and friendly experience.</p>
+    <p>Established in 2020, DelishBite continues to offer a variety of dishes inspired by Indian and Continental flavors. Come taste the difference!</p>
+</section>
+
+<section id="menu">
+    <h2>Our Menu</h2>
+
+    <h3>Starters</h3>
+    <div class="menu-item">
+        <img src="image/paneertikka.jpeg" alt="Image" style="width:120px; height:120px; border-radius:5px; float:right; margin-left:10px;">
+        <h4>Paneer Tikka</h4>
+        <p>Grilled paneer cubes marinated in spices.</p>
+        <p><strong>Price: ₹220</strong></p>
+    </div>
+    <div class="menu-item">
+        <img src="image/springroll.jpeg" alt="Food Image" style="width:120px; height:120px; border-radius:5px; float:right; margin-left:10px;">
+        <h4>Veg Spring Rolls</h4>
+        <p>Crispy rolls stuffed with mixed veggies.</p>
+        <p><strong>Price: ₹150</strong></p>
+    </div>
+
+    <h3>Main Course</h3>
+    <div class="menu-item">
+        <img src="image/pizza.jpeg" alt="Food Image" style="width:120px; height:120px; border-radius:5px; float:right; margin-left:10px;">
+        <h4>Margherita Pizza</h4>
+        <p>Classic cheese pizza with basil.</p>
+        <p><strong>Price: ₹250</strong></p>
+    </div>
+    <div class="menu-item">
+        <img src="image/pasta.jpeg" alt="Food Image" style="width:120px; height:120px; border-radius:5px; float:right; margin-left:10px;">
+        <h4>Pasta Alfredo</h4>
+        <p>Creamy Alfredo pasta.</p>
+        <p><strong>Price: ₹300</strong></p>
+    </div>
+    <div class="menu-item">
+        <img src="image/burger.jpeg" alt="Food Image" style="width:120px; height:120px; border-radius:5px; float:right; margin-left:10px;">
+        <h4>Veggie Burger</h4>
+        <p>Loaded with fresh veggies and sauce.</p>
+        <p><strong>Price: ₹180</strong></p>
+    </div>
+
+    <h3>Indian Dishes</h3>
+    <div class="menu-item">
+        <img src="image/paneerbuttermasala.jpeg" alt="Food Image" style="width:120px; height:120px; border-radius:5px; float:right; margin-left:10px;">
+        <h4>Paneer Butter Masala</h4>
+        <p>Creamy tomato-based paneer curry.</p>
+        <p><strong>Price: ₹260</strong></p>
+    </div>
+    <div class="menu-item">
+        <img src="image/biryani.jpeg" alt="Food Image" style="width:120px; height:120px; border-radius:5px; float:right; margin-left:10px;">
+        <h4>Chicken Biryani</h4>
+        <p>Aromatic biryani with tender chicken pieces.</p>
+        <p><strong>Price: ₹350</strong></p>
+    </div>
+
+    <h3>Breads</h3>
+    <div class="menu-item">
+        <img src="image/naan.jpeg" alt="Food Image" style="width:120px; height:120px; border-radius:5px; float:right; margin-left:10px;">
+        <h4>Butter Naan</h4>
+        <p>Soft naan topped with butter.</p>
+        <p><strong>Price: ₹40</strong></p>
+    </div>
+    <div class="menu-item">
+        <img src="image/roti.jpeg" alt="Food Image" style="width:120px; height:120px; border-radius:5px; float:right; margin-left:10px;">
+        <h4>Tandoori Roti</h4>
+        <p>Traditional wheat roti made in tandoor.</p>
+        <p><strong>Price: ₹20</strong></p>
+    </div>
+
+    <h3>Beverages</h3>
+    <div class="menu-item">
+        <img src="image/coffee.jpeg" alt="Food Image" style="width:120px; height:120px; border-radius:5px; float:right; margin-left:10px;">
+        <h4>Cold Coffee</h4>
+        <p>Chilled coffee topped with cream.</p>
+        <p><strong>Price: ₹120</strong></p>
+    </div>
+    <div class="menu-item">
+        <img src="image/soda.jpeg" alt="Food Image" style="width:120px; height:120px; border-radius:5px; float:right; margin-left:10px;">
+        <h4>Lemon Soda</h4>
+        <p>Refreshing sweet & salty soda.</p>
+        <p><strong>Price: ₹60</strong></p>
+    </div>
+
+    <h3>Desserts</h3>
+    <div class="menu-item">
+        <img src="image/brownie.jpeg" alt="Food Image" style="width:120px; height:120px; border-radius:5px; float:right; margin-left:10px;">
+        <h4>Chocolate Brownie</h4>
+        <p>Warm brownie served with chocolate sauce.</p>
+        <p><strong>Price: ₹150</strong></p>
+    </div>
+    <div class="menu-item">
+        <img src="image/icecream.jpeg" alt="Food Image" style="width:120px; height:120px; border-radius:5px; float:right; margin-left:10px;">
+        <h4>Ice Cream Scoop</h4>
+        <p>Vanilla, chocolate or strawberry.</p>
+        <p><strong>Price: ₹80</strong></p>
+    </div>
+</section>
+
+<section id="reservation">
+    <h2>Make a Reservation</h2>
+    <form>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+        
+        <label>Date:</label>
+        <input type="date" required>
+        
+        <label>Number of Guests:</label>
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5+</option>
+        </select>
+
+        <label>Special Requests:</label>
+        <textarea placeholder="Enter any requests"></textarea>
+
+        <button type="submit">Reserve Table</button>
+    </form>
+</section>
+
+<section id="reviews">
+    <h2>Customer Reviews</h2>
+
+    <div class="review">
+        <strong>Rohit Sharma</strong>
+        <p>Amazing food and great atmosphere!</p>
+    </div>
+
+    <div class="review">
+        <strong>Virat Kohli</strong>
+        <p>The pasta was delicious. Highly recommended!</p>
+    </div>
+
+    <div class="review">
+        <strong>Mahendra Singh Dhoni</strong>
+        <p>Friendly staff and good service.</p>
+    </div>
+</section>
+
+</body>
+</html>
